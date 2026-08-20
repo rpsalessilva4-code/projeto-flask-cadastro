@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f8f7;
+    color: #26332e;
+}
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5ebe8;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    height: 72px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #3e8064;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: #52615a;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.links a:hover {
+    color: #3e8064;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 24px;
+}
+
+.hero {
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.tag {
+    color: #4b9070;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    max-width: 650px;
+    margin: 18px 0;
+    font-size: 55px;
+    line-height: 1.05;
+}
+
+.hero p,
+.titulo p {
+    color: #718078;
+    line-height: 1.7;
+}
+
+.hero-text p {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background: #4b9070;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 22px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #3e8064;
+}
+
+.card-destaque {
+    background: white;
+    border-radius: 25px;
+    padding: 45px;
+    box-shadow: 0 15px 45px rgba(40, 65, 55, 0.08);
+}
+
+.card-destaque h2 {
+    margin: 25px 0 10px;
+}
+
+.card-destaque p {
+    color: #718078;
+    line-height: 1.6;
+}
+
+.circulo {
+    width: 85px;
+    height: 85px;
+    background: #d9eee3;
+    border-radius: 50%;
+}
+
+.pagina {
+    max-width: 800px;
+    margin: auto;
+}
+
+.titulo {
+    margin-bottom: 35px;
+}
+
+.titulo h1 {
+    margin: 12px 0;
+    font-size: 40px;
+}
+
+.formulario {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(40, 65, 55, 0.07);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dbe3df;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    background: #fbfcfc;
+}
+
+input:focus,
+select:focus {
+    border-color: #4b9070;
+}
+
+.mensagem {
+    background: #e1f3e8;
+    color: #32664f;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.lista {
+    display: grid;
+    gap: 18px;
+}
+
+.cadastro-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(40, 65, 55, 0.06);
+}
+
+.avatar {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #d9eee3;
+    color: #3e8064;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dados h2 {
+    margin-bottom: 10px;
+}
+
+.dados p {
+    color: #65736d;
+    margin: 5px 0;
+}
+
+.vazio {
+    background: white;
+    padding: 45px;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.vazio p {
+    color: #718078;
+    margin: 10px 0 25px;
+}
+
+@media (max-width: 750px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .linha {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .links {
+        gap: 12px;
+    }
+}

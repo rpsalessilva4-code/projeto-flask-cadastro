@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<section class="hero">
+    <div class="hero-text">
+        <span class="tag">FLASK • PYTHON</span>
+        <h1>Um cadastro simples.</h1>
+        <p>Um pequeno projeto feito com Flask para praticar rotas, formulários, POST, request.form.get e listas de dicionários.</p>
+        <a href="{{ url_for('cadastro') }}" class="botao">Começar cadastro</a>
+    </div>
+
+    <div class="card-destaque">
+        <div class="circulo"></div>
+        <h2>Seu projeto</h2>
+        <p>Dados enviados pelo formulário ficam armazenados enquanto o servidor estiver rodando.</p>
+    </div>
+</section>
+{% endblock %}

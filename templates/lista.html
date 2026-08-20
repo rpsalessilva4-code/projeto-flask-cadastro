@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<section class="pagina">
+    <div class="titulo">
+        <span class="tag">DADOS</span>
+        <h1>Cadastros realizados</h1>
+        <p>Os dados enviados pelo formulário aparecem aqui.</p>
+    </div>
+
+    {% if cadastros %}
+    <div class="lista">
+        {% for cadastro in cadastros %}
+        <div class="cadastro-card">
+            <div class="avatar">{{ cadastro.nome[0]|upper }}</div>
+            <div class="dados">
+                <h2>{{ cadastro.nome }}</h2>
+                <p><strong>CPF:</strong> {{ cadastro.cpf }}</p>
+                <p><strong>E-mail:</strong> {{ cadastro.email }}</p>
+                <p><strong>Telefone:</strong> {{ cadastro.telefone }}</p>
+                <p><strong>Gênero:</strong> {{ cadastro.genero }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="vazio">
+        <h2>Nenhum cadastro ainda.</h2>
+        <p>Faça o primeiro cadastro para os dados aparecerem aqui.</p>
+        <a href="{{ url_for('cadastro') }}" class="botao">Ir para cadastro</a>
+    </div>
+    {% endif %}
+</section>
+{% endblock %}
