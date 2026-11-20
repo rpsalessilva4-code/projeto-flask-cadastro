@@ -21,16 +21,13 @@ Funcionalidades
 Estrutura do projeto
 
 projeto-flask-cadastro/
-│
-├── static/
-│   ├── script.js
-│   └── style.css
-│
-├── templates/
-│
-├── app.py
-├── requirements.txt
-└── .gitignore
+    static/
+        script.js
+        style.css
+    templates/
+    app.py
+    requirements.txt
+    .gitignore
 
 Como executar o projeto
 
